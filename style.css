@@ -1,0 +1,198 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: font-size 0.2s ease;
+}
+
+nav a:hover {
+  font-size: large;
+}
+
+/* Countdown Timer */
+#countdown {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #d10000;
+}
+
+/* Buttons */
+button {
+  padding: 0.8rem 1.5rem;
+  margin-top: 3rem;
+  background: #a6df6a;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  background: #004f9e;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.cancel {
+  background: #aaa;
+  color: #000;
+}
+
+/* About Section */
+#about {
+  padding: 2rem;
+  background: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: #f0f0f0;
+  color: #000;
+}
+
+footer .icons {
+  margin-top: 1rem;
+}
+
+footer .icons a {
+  color: #000;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer .icons a:hover {
+  color: rgb(162, 234, 162);
+}
+
+footer:hover {
+  color: greenyellow;
+}
+
+/* Form Popup */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: white;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  margin: 1rem 0;
+}
+
+/* Event Details Section */
+.event-details {
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.event-details ion-icon {
+  color: #f0c040; /* Gold highlight */
+  margin-right: 8px;
+  font-size: 22px;
+  vertical-align: middle;
+}
+.about-section {
+  background: #000 url('your-bg.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 60px 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1 1 500px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00ffc3;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-video {
+  flex: 1 1 500px;
+}
+
+.about-video iframe {
+  width: 100%;
+  height: 315px;
+  border: 3px solid #00ffc3;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffc3;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text, .about-video {
+    flex: 1 1 100%;
+  }
+}

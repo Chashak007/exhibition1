@@ -1,0 +1,149 @@
+/* Footer Section */
+footer {
+  background-color: rgba(230, 234, 229, 0.959);
+  color: #000000;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+footer .icons {
+  margin-top: 1rem;
+}
+
+footer .icons a {
+  color: #000; /* Changed from white to black for visibility on light bg */
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer .icons a:hover {
+  color: rgb(162, 234, 162);
+}
+
+footer:hover {
+  color: greenyellow;
+}
+
+/* Form Styling */
+form {
+  max-width: 400px;
+  margin: 0 auto; /* Center horizontally */
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: large;
+}
+
+/* Logo */
+.logo img {
+  height: 100px;
+  width: auto;
+  display: block;
+}
+
+/* Hero Section with Video Background */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+.bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero .hero-content {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  max-width: 600px;
+}
+
+.hero .hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero .hero-content p {
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero-content ion-icon {
+  margin-right: 10px;
+  font-size: 22px;
+  color: #facc15; /* Yellow */
+}
+
+/* Hero Section (Text Only) */
+.hero-section {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  color: #222;
+}
+
+.hero-section .hero-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.hero-section .hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+/* Text Highlights */
+.highlight-orange {
+  color: orange;
+}
+
+.highlight-green {
+  color: rgb(0, 160, 0);
+}
+
+/* Subheading */
+.subheading {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Event Details */
+.event-details p {
+  font-size: 1rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.event-details ion-icon {
+  font-size: 1.2rem;
+  margin-right: 8px;
+  color: #007bff;
+}
