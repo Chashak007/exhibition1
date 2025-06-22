@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informa Markets Exhibition</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utils.css" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="registration.js"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img.png.png" alt="Informa Markets Logo" />
+      </a>
+    </div>
+    <nav>
+      <a href="#enquire">Enquire With Us</a>
+      <a href="registration.html">Register</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Video Background -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="info.mp4" type="video/mp4" />
+    </video>
+
+    <div class="hero-content">
+      <h1>
+        <span class="highlight-orange">India</span> Medtech 
+        <span class="highlight-green">Exhibition</span>
+      </h1>
+      <p class="subheading">This exhibition is organized by Informa Markets Ltd.</p>
+
+      <div class="event-details">
+        <p><ion-icon name="location-outline"></ion-icon> <strong>Venue:</strong> Bombay Exhibition Centre, Mumbai</p>
+        <p><ion-icon name="calendar-outline"></ion-icon> <strong>Date:</strong> 15–17 July 2025, 10:00 AM – 6:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section with Video -->
+  <section class="about-section reveal">
+  <div class="about-container">
+    <!-- Event Information -->
+    <div class="about-text">
+      <h2>About the Event</h2>
+      <p>
+        Country’s biggest ever medical device event showcasing India’s MedTech ecosystem. Opportunities to network and explore collaborations.
+        Baseline demand and growth for Vision 2047. Presentations by Union & State Procurement Agencies for the next 5 years. Accelerate investment
+        into MedTech sector by both global & domestic companies. Development of ecosystem – Supplier, Infrastructure, Manufacturing, R&D, Start-up,
+        Academia and Skilling. 300+ foreign buyers from 50+ countries.
+      </p>
+    </div>
+
+    <!-- YouTube Video -->
+    <div class="about-video">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Registration Form Popup -->
+  <div id="form-popup" class="form-popup">
+    <form id="registrationForm" class="form-container">
+      <h2>Register</h2>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <button type="submit">Submit</button>
+      <button type="button" onclick="closeForm()" class="cancel">Close</button>
+    </form>
+  </div>
+
+  <!-- Connect Us Section -->
+  <div id="Connect" class="form">
+    <h1>Connect Us</h1>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>amedia@informa.com</p>
+    <p>&copy; 2025 Informa Markets. All rights reserved.</p>
+    <div class="icons">
+      <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+<script>
+  window.addEventListener('scroll', function () {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(elem => {
+      const windowHeight = window.innerHeight;
+      const elementTop = elem.getBoundingClientRect().top;
+      const revealPoint = 150;
+
+      if (elementTop < windowHeight - revealPoint) {
+        elem.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+  
+</body>
+</html>
